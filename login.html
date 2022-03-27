@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Login Page </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            /* background: url(bg.jpg) no-repeat; */
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            z-index: 2;
+            padding: 30px 100px;
+            background-color: rgb(27, 27, 27);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        label {
+            display: none;
+        }
+
+        header .logo {
+            position: relative;
+            color: #ff6905;
+            font-size: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        header .navigation a {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 2px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+            transition-property: background;
+        }
+
+        header .navigation a:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        header .navigation a:hover {
+            background: rgb(255, 255, 255);
+            color: black;
+        }
+
+        .login-signup-nav-btn {
+            width: 80px;
+            padding: 5px;
+            margin: 0px;
+            border-radius: 5px;
+            color: whitesmoke;
+            border: none;
+            border: 2px solid #ffffff;
+            background-color: #ff6905;
+
+        }
+
+        Body {
+            /* font-family: Calibri, Helvetica, sans-serif;   */
+            background-color: whitesmoke;
+        }
+
+        button {
+            background-color: white;
+            width: 20%;
+            color: black;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 20%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px black;
+            border-radius: 5px;
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.151);
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+
+        a {
+            text-decoration: none;
+            transition: .5s ease;
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+            color: #ff6905;
+            font-weight: 600;
+            font-size: 20px;
+            float: left;
+            width: 48%;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s ease;
+
+        }
+
+        .container {
+            padding: 25px;
+            background-color: orange;
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.329);
+            border-radius: 5px;
+            margin: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!-- Header -->
+        <header>
+            </div>
+            <a href="index.html"><img src="imgs/logo.png"></a>
+            <div class="navigation">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About</a>
+                <a href="review.html">Reviews</a>
+                <a href="services.html">Services</a>
+                <a href="contact_us.html">Contact</a>
+                <!-- <a href="login.html">Login</a> -->
+            </div>
+            <div class="nav-buttons">
+                <button onclick="window.location.href='login.html';" type="button"
+                    class="login-signup-nav-btn">Login</button>
+                <button onclick="window.location.href='signup.html';" type="button"
+                    class="login-signup-nav-btn">Signup</button>
+            </div>
+            <label for="check">
+                <i class="fas fa-bars menu-btn"></i>
+                <i class="fas fa-times close-btn"></i>
+            </label>
+        </header>
+        <center>
+            <h1 style="margin: 25px;color: #ff6905;"> Welcome to ServeU! </h1>
+        </center>
+        <form>
+            <div class="container">
+                <ul class="tab-group">
+                    <li class="tab active"><a href="signup.html">Sign Up</a></li>
+                    <li class="tab"><a href="login.html">Log In</a></li>
+                </ul>
+                <center>
+                    <h1 style=" margin-top: 50px; margin-bottom: 25px; color:  white;"> Login to Continue! </h1>
+                </center>
+                <center><label>Username : </label></center>
+                <center><input type="text" placeholder="Enter Username" name="username" required> </center>
+                <br>
+                <center><label>Password : </label> </center>
+                <center><input type="password" placeholder="Enter Password" name="password" required> </center>
+                <br>
+                <center><button type="submit">Login</button></center>
+                <center><a href="#"> Forgot Password? </a></center>
+                <br>
+                <center><input type="checkbox" checked="checked"> Remember me </center>
+                <br>
+                <center><button type="button" class="googlebtn"> Sign in with Google </button></center>
+                <br>
+                <center><button type="button" class="signupbtn"> Don't have an account? Sign Up here! </button>
+                </center>
+
+            </div>
+            <!-- <div><img src="https://image.shutterstock.com/image-vector/let-us-serve-you-vintage-260nw-1950836449.jpg"  height="400px" width="1200px"></div>    -->
+        </form>
+    </section>
+</body>
+
+</html>

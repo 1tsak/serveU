@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/6fdb1c49f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding-top: 12px; /* Some padding */
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 150px; 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 147px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.frbox {
+  margin-left: 0px;
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+    </div>
+    <a href="index.html"><img src="imgs/logo.png"></a>
+    <div class="navigation">
+      <a href="index.html">Home</a>
+      <a href="about_us.html">About</a>
+      <a href="review.html">Reviews</a>
+      <a href="services.html">Services</a>
+      <a href="contact_us.html">Contact</a>
+      <!-- <a href="login.html">Login</a> -->
+    </div>
+    <div class="nav-buttons">
+      <button onclick="window.location.href='login.html';" type="button"class="login-signup-nav-btn">Login</button>
+      <button onclick="window.location.href='signup.html';" type="button"class="login-signup-nav-btn">Signup</button></div>
+    <label for="check">
+      <i class="fas fa-bars menu-btn"></i>
+      <i class="fas fa-times close-btn"></i>
+    </label>
+  </header>
+
+  <!-- Main Body Section -->
+  <div class="conbox">
+      <div class="conbox1">
+        <h2 id="conh10">Virtual Contact</h2>
+        <div class="frbox"><form action="action_page.php">
+
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <br>
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your email..">
+            <br>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        
+          </form></div>
+      </div>
+      <div class="conbox3"></div>
+      <div class="conbox2">
+        <h2 id="conh11">Physical Contact</h2>
+        <div style="font-size: 200px;" class="clio1"><i class="fa fa-building" aria-hidden="true"></i></div>
+        <h3 class="conh12">Head Office</h3>
+        <h4 class="condis">2562, Lorem ipsum dolor, sit amet</h4>
+        <h3 class="conh13">Corporate Office</h3>
+        <h4 class="condis">8563, Lorem ipsum dolor, sit amet</h4>
+      </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <div class="footer-content">
+
+      <div class="footer-section about">
+        <h1 class="logo-text"><span>DE</span>MO</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla in hic eaque vitae aliquid, repellendus, culpa provident maiores delectus adipisci modi ipsum? Aspernatur doloremque autem distinctio provident odit nesciunt maxime.
+        </p>
+        <div class="contact">
+          <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+          <span><i class="fas fa-envelope"></i> &nbsp; support@demo.com</span>
+        </div>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <br>
+        <ul>
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Services</li>
+          </a>
+          <a href="#">
+            <li>Reviews</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="footer-section contact-form">
+        <h2>Contact us</h2>
+        <br>
+        <form action="index.html" method="post">
+          <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+          <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+          <button type="submit" class="btn btn-big contact-btn">
+            <i class="fas fa-envelope"></i>
+            Send
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      &copy; example.com | Made With 💖 For IWT Project
+    </div>
+  </div>
+</body>
+
+</html>

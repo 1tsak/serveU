@@ -1,0 +1,48 @@
+header{
+	
+    position: sticky;
+    top: 0;
+    width:90%;
+    padding: 30px 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo{
+    position: relative;
+    color: orangered;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  header .c1 a{
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+  border-radius:20px;}
+    
+  
+  .c2{
+      background-color:black;
+      width:100%;
+      color:white;
+      justify-content:center;
+      
+  }
+  #mainhead{
+    font-size:72px ;
+    color: black;
+    margin-top: 25px;
+    text-shadow: none;
+  }
+  #mainhead span{
+    color: #ff6905;
+    text-shadow: none;
+  }
